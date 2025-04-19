@@ -157,6 +157,8 @@ mixin TextCellState<T extends TextCell> on State<T> implements TextFieldProps {
         : _initialCellValue.toString() == value.toString()
             ? _CellEditingStatus.init
             : _CellEditingStatus.updated;
+    // Added By MW Mansuri
+    _changeValue();
   }
 
   void _handleOnComplete() {
